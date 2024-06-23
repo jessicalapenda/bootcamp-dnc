@@ -1,5 +1,15 @@
 /* Importação de Fonte */
 
+
+:root{
+    --azul-dnc: #0c70f2;
+    --preto-dnc: #303030;
+    --cinza-hover: #C9C9C9;
+
+    --font-padrao: 'Inter';
+}
+
+
 body{
     margin: 0px; /*Margem Externa*/
     padding: 0px; /*Margem Interna*/
@@ -13,7 +23,7 @@ body{
         width: 100%;
         height: 100px;
         border: 1px solid black;   
-        background-color: #303030; 
+        background-color: var(--preto-dnc); 
 
         display: flex; 
         justify-content: space-between;
@@ -37,23 +47,23 @@ body{
         font-weight: 600px; 
         color: white;
         text-decoration: none;
-        font-family: Inter;
+        font-family: var(--font-padrao);
     }
 
-    #principal div a:hover{
+    #principal div a :hover{
         color: #cccccc ;
     }
     
 
     #principal button{
         margin-right: 5%;
-        background-color:   rgba(12, 112, 242, 1);
+        background-color: var(--azul-dnc);
         border: 0px;
 
         height: 40px;
         width: 80px;
         
-        font-family: 'Inter';
+        font-family: var(--font-padrao);
         font-size: 20px;
         font-weight: 600;
         color: white;
@@ -61,3 +71,105 @@ body{
         box-shadow: 3px 2px 4px 0px rgba(12, 112, 242, 0.25);
         cursor: pointer;
     }
+
+/*Seção Principal do Site*/
+
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+        header{
+            color:white;
+            font-family: var(--font-padrao);
+        }
+
+        header h1{
+            text-transform: uppercase;
+            font-size: 80px;
+            font-weight: 800px;
+            text-align: center;
+
+            margin-bottom: 20px;
+        }
+
+        header h2{
+            text-align: center;
+            font-size: 40px;
+            font-weight: 700px;
+            margin-bottom: 100px;
+        }
+
+        header .invert{
+
+            background-color: black;
+            font-weight: bolder;
+            padding: 5px;
+        }
+
+        /*Formulario*/
+
+        form{
+            color: white;
+            font-family: var(--font-padrao);
+            font-size: 30px;
+            font-weight: 600px;
+            width: 600px;
+
+        }
+
+        .form-group{
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+
+        form input{
+            border-radius: 8px;
+            height: 30px;
+            border: 0px;
+            font-size: 20px;
+            padding: 11px;
+            background-color: rgba(255, 255, 255, 0.9);
+
+        }
+
+        form label{
+            margin: 10px 0px 10px 0px; /*rosa dos ventos ordem que define as alterações*/
+        }
+
+        form input ::placeholder{
+            color: rgba(57, 57, 57, 0.5);
+        }
+
+        .checkbox-itens label{
+            font-size: 25px;
+        }
+
+        .checkbox-itens{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        input[type="checkbox"]{
+            transform: scale(1.6);
+        }
+
+        input[type="submit"]{
+            background-color: rgba(12, 112, 242, 0.9);
+            width: 100%;
+            height: 56px;
+            font-size: 32px;
+            color: white;
+            margin-top: 70px;
+            box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
+            cursor: pointer;
+        }
