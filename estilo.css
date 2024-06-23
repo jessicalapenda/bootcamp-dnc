@@ -14,7 +14,7 @@ body{
     margin: 0px; /*Margem Externa*/
     padding: 0px; /*Margem Interna*/
 
-    background:linear-gradient(180deg, rgba(12, 112, 242, 0.5) 19.91%, rgba(12, 112, 242, 0) 24.84%) #303030;
+    background:linear-gradient(180deg, rgba(13, 112, 242, 0.5) 29.91%, rgba(12, 112, 242, 0) 44.84%) #303030;
     background-repeat: no-repeat;
 
 }
@@ -173,3 +173,153 @@ body{
             box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
             cursor: pointer;
         }
+
+        /* Footer */
+
+        footer{
+            width: 100%;
+            background-color: var(--azul-dnc);
+        }
+
+        footer .linha1{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        footer ul{
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        footer nav{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            height: 320px;
+        }
+
+        footer h5{
+            text-align: center;
+            color: white;
+            font-weight: 800px;
+            font-size: 20px;
+            font-family: var(--font-padrao);
+            border-radius: 9px;
+            background-color: var(--preto-dnc);
+
+            padding: 10px 10px 10px 10px;
+            margin-bottom: 15px;
+        }
+
+        footer ul li{
+            text-align: center;
+            color: white;
+            font-weight: 600px;
+            font-size: 20px;
+            font-family: var(--font-padrao);
+
+            margin: 20px 0px 20px 0px;
+
+        }
+
+        footer ul li a{
+            color: white;
+            text-decoration: none;
+        }
+
+        footer ul li a :hover{
+            color: var(--cinza-hover);
+        }
+
+        footer .endereco{
+            font-weight: 600px;
+            font-size: 18px;
+            font-family: var(--font-padrao);
+            color: white;
+            text-align: center;
+            width: 20%;
+
+        }
+
+        footer .linha2{
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            margin: 0px;
+            padding: 10px;
+
+        }
+
+        footer .linha2 a{
+            font-weight: 600px;
+            font-size: 20px;
+            font-family: var(--font-padrao);
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+
+        }
+
+        footer .linha2 a:first-child{
+            border-right:  3px solid white;
+        }
+
+        footer .linha a :hover{
+            color: var(--cinza-hover);
+        }
+
+        /* Menu */
+
+        @media only screen and (max-width: 600px){
+
+            #principal{
+                flex-direction: column;
+                height: auto;
+            }
+
+            #menu{
+                flex-direction: column;
+                width: 100%;
+                margin: 0px;
+            }
+
+            #menu a{
+                display: flex;
+                align-items: center;
+                height: 50px;
+                
+            }
+            
+            #principal button{
+                width: 100%;
+                margin-right: 0px;
+            }
+
+            /* Section */
+
+            section h1{
+                font-size: 38px ;
+            }
+
+            section h2{
+                font-size: 28px;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+
+            form{
+                width: 95%;
+                font-size: 20px;
+            }
+
+            .checkbox-itens label{
+                font-size: 15px;
+            }
+
+        }
+
+
